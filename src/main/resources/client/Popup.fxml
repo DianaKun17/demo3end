@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="105.0"
+          prefWidth="417.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="client.PopupController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="208.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.0" minWidth="10.0" prefWidth="70.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <Label prefHeight="34.0" prefWidth="84.0" text="Login:" GridPane.halignment="CENTER"
+               GridPane.valignment="CENTER">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label prefHeight="34.0" prefWidth="84.0" text="Password:" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+               GridPane.valignment="CENTER">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="login" GridPane.columnIndex="1"/>
+        <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Button mnemonicParsing="false" onAction="#register" text="Register" GridPane.columnIndex="2"
+                GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER"/>
+        <Button layoutX="361.0" layoutY="77.0" mnemonicParsing="false" onAction="#login" text="Login"
+                GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
+        <CheckBox fx:id="checkBox" mnemonicParsing="false" text="Stay in system" GridPane.columnIndex="1"
+                  GridPane.rowIndex="2"/>
+    </children>
+</GridPane>
